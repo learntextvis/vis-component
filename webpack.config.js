@@ -42,6 +42,10 @@ module.exports = {
         test: /\.css$/, //loader: "style!css!sass"
         loader: ExtractTextPlugin.extract("style", "css")
       },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      }
     ]
   },
   plugins: [

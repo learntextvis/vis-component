@@ -5,16 +5,15 @@ import VisComponent from './components/viscomponent/viscomponent.jsx';
 import '../index.html';
 
 // This will render out an an example of viscomponent
-import sampleData from '../data/sample_data';
 
-var config = {};
-var data = sampleData;
+import data from '../data/data.json';
+import config from '../data/config.json';
 
 document.addEventListener("DOMContentLoaded", function() {
   ReactDOM.render(
     <VisComponent
       config={config}
-      data={data}
+      data={data[0]}
     />,
     document.querySelector("#main"));
 });
